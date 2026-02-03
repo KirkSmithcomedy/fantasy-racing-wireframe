@@ -1,13 +1,29 @@
 import Link from "next/link";
 import LeagueHeader from "@/components/LeagueHeader";
+import ScreenShell from "@/components/ScreenShell";
 import TabBar from "@/components/TabBar";
 import { leagueInfo, matchup, quickActions } from "@/lib/mockData";
 
 export default function LeaguePage() {
   return (
-    <div className="wireframe-shell">
+    <ScreenShell theme="league">
       <div className="mx-auto flex w-full max-w-2xl flex-col gap-6">
         <LeagueHeader subtitle={`Updated ${leagueInfo.updatedAt}`} />
+
+        <section className="wireframe-card rise-in rounded-[28px] px-6 py-5">
+          <div className="flex items-center justify-between text-xs uppercase tracking-[0.2em] text-neutral-500">
+            <span>Presenting Sponsor</span>
+            <span>Hildebandts Icecream</span>
+          </div>
+          <div className="mt-4 rounded-2xl border border-dashed border-neutral-300 bg-neutral-50 px-5 py-4 text-center">
+            <p className="text-lg font-semibold text-neutral-900">
+              Hildebandts Icecream
+            </p>
+            <p className="mt-1 text-sm text-neutral-600">
+              Week 3 featured partner
+            </p>
+          </div>
+        </section>
 
         <section className="wireframe-card rise-in rounded-[28px] px-6 py-5">
           <div className="flex items-center justify-between text-xs uppercase tracking-[0.2em] text-neutral-500">
@@ -87,6 +103,6 @@ export default function LeaguePage() {
       </div>
 
       <TabBar />
-    </div>
+    </ScreenShell>
   );
 }
