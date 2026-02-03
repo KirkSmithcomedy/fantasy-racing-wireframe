@@ -11,6 +11,14 @@ export default function LeagueHeader({
         <span>{appName}</span>
         <span>Wireframe</span>
       </div>
+      <div className="mt-3 flex items-center justify-between gap-3">
+        <div className="text-[10px] uppercase tracking-[0.25em] text-neutral-500">
+          Presenting Sponsor
+        </div>
+        <div className="rounded-full border border-neutral-300 bg-neutral-100 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-neutral-700">
+          Hildebandts Icecream
+        </div>
+      </div>
       <div className="mt-3 flex flex-col gap-2">
         <div className="flex items-center justify-between">
           <h1 className="text-xl font-semibold text-neutral-900">
