@@ -13,11 +13,11 @@ export default function LeaguePage() {
         <section className="wireframe-card rise-in rounded-[28px] px-6 py-5">
           <div className="flex items-center justify-between text-xs uppercase tracking-[0.2em] text-neutral-500">
             <span>Presenting Sponsor</span>
-            <span>Hildebandts Icecream</span>
+            <span>Hildebrandt's Icecream</span>
           </div>
           <div className="mt-4 rounded-2xl border border-dashed border-neutral-300 bg-neutral-50 px-5 py-4 text-center">
             <p className="text-lg font-semibold text-neutral-900">
-              Hildebandts Icecream
+              Hildebrandt's Icecream
             </p>
             <p className="mt-1 text-sm text-neutral-600">
               Week 3 featured partner
