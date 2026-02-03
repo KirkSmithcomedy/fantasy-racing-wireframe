@@ -42,6 +42,9 @@ body {
 .wireframe-shell {
   min-height: 100vh;
   padding: 28px 16px 110px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .wireframe-card {
@@ -56,6 +59,48 @@ body {
 
 .rise-in {
   animation: rise-in 0.6s ease-out both;
+}
+
+.wireframe-shell[data-theme="home"] {
+  background-image:
+    linear-gradient(140deg, rgba(245, 245, 245, 0.95), rgba(230, 228, 224, 0.75)),
+    url("https://cdn.pixabay.com/photo/2019/01/27/00/15/horse-racing-3957240_1280.jpg");
+}
+
+.wireframe-shell[data-theme="login"] {
+  background-image:
+    linear-gradient(160deg, rgba(238, 234, 226, 0.92), rgba(219, 228, 236, 0.78)),
+    url("https://cdn.pixabay.com/photo/2017/03/01/03/09/horse-racing-2107382_1280.jpg");
+}
+
+.wireframe-shell[data-theme="league"] {
+  background-image:
+    linear-gradient(160deg, rgba(234, 231, 223, 0.93), rgba(227, 214, 200, 0.78)),
+    url("https://cdn.pixabay.com/photo/2017/08/11/03/04/race-horse-2629450_1280.jpg");
+}
+
+.wireframe-shell[data-theme="draft"] {
+  background-image:
+    linear-gradient(150deg, rgba(238, 232, 226, 0.92), rgba(208, 222, 219, 0.78)),
+    url("https://cdn.pixabay.com/photo/2014/08/29/03/01/horses-430439_1280.jpg");
+}
+
+.wireframe-shell[data-theme="team"] {
+  background-image:
+    linear-gradient(150deg, rgba(240, 236, 228, 0.92), rgba(214, 220, 232, 0.78)),
+    url("https://cdn.pixabay.com/photo/2019/01/27/00/15/horse-racing-3957240_1280.jpg");
+}
+
+.wireframe-shell[data-theme="matchup"] {
+  background-image:
+    linear-gradient(150deg, rgba(236, 230, 222, 0.92), rgba(232, 214, 214, 0.78)),
+    url("https://cdn.pixabay.com/photo/2017/03/01/03/09/horse-racing-2107382_1280.jpg");
+}
+
+.wireframe-shell[data-theme="standings"] {
+  background-image:
+    linear-gradient(160deg, rgba(234, 232, 224, 0.92), rgba(218, 228, 214, 0.78)),
+    url("https://cdn.pixabay.com/photo/2017/08/11/03/04/race-horse-2629450_1280.jpg");
 }
 
 @keyframes fade-in {

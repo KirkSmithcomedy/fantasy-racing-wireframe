@@ -1,4 +1,5 @@
 import LeagueHeader from "@/components/LeagueHeader";
+import ScreenShell from "@/components/ScreenShell";
 import TabBar from "@/components/TabBar";
 import { roster } from "@/lib/mockData";
 
@@ -46,7 +47,7 @@ function RosterSection({
 
 export default function TeamPage() {
   return (
-    <div className="wireframe-shell">
+    <ScreenShell theme="team">
       <div className="mx-auto flex w-full max-w-2xl flex-col gap-6">
         <LeagueHeader subtitle="Set your starters" />
 
@@ -64,6 +65,6 @@ export default function TeamPage() {
       </div>
 
       <TabBar />
-    </div>
+    </ScreenShell>
   );
 }

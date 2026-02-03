@@ -1,10 +1,11 @@
 import LeagueHeader from "@/components/LeagueHeader";
+import ScreenShell from "@/components/ScreenShell";
 import TabBar from "@/components/TabBar";
 import { draftInfo, leagueInfo } from "@/lib/mockData";
 
 export default function DraftPage() {
   return (
-    <div className="wireframe-shell">
+    <ScreenShell theme="draft">
       <div className="mx-auto flex w-full max-w-3xl flex-col gap-6">
         <LeagueHeader subtitle={`Draft room - Week ${leagueInfo.week}`} />
 
@@ -79,6 +80,6 @@ export default function DraftPage() {
       </div>
 
       <TabBar />
-    </div>
+    </ScreenShell>
   );
 }

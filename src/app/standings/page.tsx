@@ -1,10 +1,11 @@
 import LeagueHeader from "@/components/LeagueHeader";
+import ScreenShell from "@/components/ScreenShell";
 import TabBar from "@/components/TabBar";
 import { standings } from "@/lib/mockData";
 
 export default function StandingsPage() {
   return (
-    <div className="wireframe-shell">
+    <ScreenShell theme="standings">
       <div className="mx-auto flex w-full max-w-2xl flex-col gap-6">
         <LeagueHeader subtitle="Standings" />
 
@@ -44,6 +45,6 @@ export default function StandingsPage() {
       </div>
 
       <TabBar />
-    </div>
+    </ScreenShell>
   );
 }
